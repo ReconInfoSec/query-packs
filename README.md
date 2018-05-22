@@ -30,7 +30,6 @@ Comment out the following in tasks/main.yml if you want to use the local JSON fi
     object: "{{ item }}.json"
     dest: "roles/query-packs/files/{{ item }}.json"
     mode: get
-  register: location
 ```
 
 Example Playbook

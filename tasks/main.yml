@@ -5,7 +5,6 @@
     object: "{{ item }}.json"
     dest: "roles/query-packs/files/{{ item }}.json"
     mode: get
-  register: location
 
 - name: Login and get bearer token
   shell: |
