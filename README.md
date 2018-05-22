@@ -13,9 +13,9 @@ Query packs are from: https://github.com/palantir/osquery-configuration/tree/mas
 Role Variables
 --------------
 
-kolide_url: "https://kolide.yourwebsite.com"  
-kolide_user: "admin"
-kolide_pw: "password"
+kolide_url: "https://kolide.yourwebsite.com"   
+kolide_user: "admin"  
+kolide_pw: "password"  
 
 
 Example Playbook
