@@ -1,7 +1,7 @@
 query-packs
 =========
 
-Ansible role for uploading query packs to Kolide (https://kolide.com)
+Ansible role for importing query packs into Kolide (https://kolide.com)
 
 Requirements
 ------------
