@@ -7,14 +7,21 @@
     mode: get
 
 - name: Login and get bearer token
-  shell: |
-    #!/bin/bash
-    curl -X POST -H "DNT: 1" -H "Content-Type: application/json" -d '{"password":"{{ kolide_pw }}","username":"{{ kolide_user }}"}' "{{ kolide_url }}/api/v1/kolide/login" -k
+  uri:
+    url: "{{ kolide_url }}/api/v1/kolide/login"
+    method: POST
+    body: "{\"password\":\"{{ kolide_pw }}\",\"username\":\"{{ kolide_user }}\"}"
+    body_format: json
+    headers:
+      Content-Type: application/json
+      DNT: 1
+    validate_certs: no
+    return_content: yes
   register: response
 
 - name: Get token
   set_fact:
-    bearer_token: "{{ (response.stdout | from_json)['token'] }}"
+    bearer_token: "{{ response['json']['token'] }}"
 
 - name: Create query pack
   shell: "{{ lookup('template', 'create-queries.py.j2') }}"
