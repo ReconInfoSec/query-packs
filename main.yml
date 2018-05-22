@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  vars_files:
+    - vars/main.yml
+  tasks:
+
+    - name: Import query packs
+      include_role:
+        name: query-packs
+      with_items:
+        - 'windows-application-security'
+        - 'unwanted-chrome-extensions'
+        - 'performance-metrics'
+        - 'osx-attacks'
+        - 'security-tooling-checks'
+        - 'windows-compliance'
+        - 'windows-registry-monitoring'
+        - 'windows-attacks'

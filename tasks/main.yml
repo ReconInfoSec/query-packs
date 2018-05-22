@@ -1,0 +1,26 @@
+---
+- name: Get query pack from S3
+  aws_s3:
+    bucket: opensoc-kolide-query-packs
+    object: "{{ item }}.json"
+    dest: "roles/query-packs/files/{{ item }}.json"
+    mode: get
+  register: location
+
+- name: Login and get bearer token
+  shell: |
+    #!/bin/bash
+    curl -X POST -H "DNT: 1" -H "Content-Type: application/json" -d '{"password":"{{ kolide_pw }}","username":"{{ kolide_user }}"}' "{{ kolide_url }}/api/v1/kolide/login" -k
+  register: response
+
+- name: Get token
+  set_fact:
+    bearer_token: "{{ (response.stdout | from_json)['token'] }}"
+
+- name: Create query pack
+  shell: "{{ lookup('template', 'create-queries.py.j2') }}"
+  args:
+    chdir: "{{ role_path }}/files"
+    executable: /usr/local/bin/python
+  register: save_query_result
+  ignore_errors: True

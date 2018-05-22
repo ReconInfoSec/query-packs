@@ -1,0 +1,56 @@
+#!/bin/python
+import json
+import requests
+
+with open('{{ item }}.json') as f:
+    query_pack = json.load(f)
+
+headers = {
+    'DNT': '1',
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer {{ bearer_token }}',
+}
+
+# Create queries
+query_ids = []
+platforms = []
+intervals = []
+snapshots = []
+
+for key,value in query_pack['queries'].iteritems():
+
+    formatted_query = value['query'].replace("\\", "\\\\")
+    data = '{ "name": "%s", "description": "%s", "query": "%s" }' % (key, value['description'], formatted_query)
+    response = requests.post('{{ kolide_url }}/api/v1/kolide/queries', headers=headers, data=data, verify=False)
+    response_json = response.json()
+
+    print data
+
+    # Get created query ID
+    query_ids.append(response_json['query']['id'])
+
+    # Get platform
+    if 'platform' in value:
+        platforms.append(value['platform'])
+    else:
+        platforms.append(query_pack['platform'])
+
+    # Get snapshot
+    if 'snapshot' in value:
+        snapshots.append(json.dumps(value['snapshot']))
+    else:
+        snapshots.append(json.dumps(False))
+
+    # Get interval
+    intervals.append(value['interval'])
+
+# Create pack
+data = '{ "name": "%s", "description": "%s", "host_ids": [], "label_ids": [] }' % ("{{ item }}", "{{ item }}")
+response = requests.post('{{ kolide_url }}/api/v1/kolide/packs', headers=headers, data=data, verify=False)
+response_json = response.json()
+pack_id = response_json['pack']['id']
+
+# Add queries to pack
+for id, platform, interval, snapshot in zip(query_ids, platforms, intervals, snapshots):
+    data = '{ "interval": %s, "pack_id": %s, "platform": "%s", "query_id": %s, "removed": true, "snapshot": %s, "shard": null }' % (interval, pack_id, platform, id, snapshot)
+    response = requests.post('{{ kolide_url }}/api/v1/kolide/schedule', headers=headers, data=data, verify=False)

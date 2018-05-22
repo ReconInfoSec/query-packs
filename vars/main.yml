@@ -1,0 +1,5 @@
+---
+# vars file for roles/query-packs
+kolide_url: "https://kolide.yourwebsite.com"
+kolide_user: "admin"
+kolide_pw: "password"
