@@ -1,7 +1,7 @@
 ---
 - name: Get query pack from S3
   aws_s3:
-    bucket: opensoc-kolide-query-packs
+    bucket: "{{ s3_bucket }}"
     object: "{{ item }}.json"
     dest: "roles/query-packs/files/{{ item }}.json"
     mode: get
