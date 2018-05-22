@@ -37,8 +37,6 @@ Example Playbook
 ```
 ---
 - hosts: localhost
-  vars_files:
-    - vars/main.yml
   tasks:
     - name: Import query packs
       include_role:
