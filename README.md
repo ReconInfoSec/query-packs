@@ -38,7 +38,7 @@ Example Playbook
         - 'windows-compliance'
         - 'windows-registry-monitoring'
         - 'windows-attacks'
-        ```
+```
 
 Author Information
 ------------------
