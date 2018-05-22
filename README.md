@@ -16,7 +16,22 @@ Role Variables
 kolide_url: "https://kolide.yourwebsite.com"   
 kolide_user: "admin"  
 kolide_pw: "password"  
+s3_bucket: "my-bucket-name"
 
+Notes
+----------------
+
+Comment out the following in tasks/main.yml if you want to use the local JSON files instead of pulling from S3.
+```
+---
+- name: Get query pack from S3
+  aws_s3:
+    bucket: "{{ s3_bucket }}"
+    object: "{{ item }}.json"
+    dest: "roles/query-packs/files/{{ item }}.json"
+    mode: get
+  register: location
+```
 
 Example Playbook
 ----------------

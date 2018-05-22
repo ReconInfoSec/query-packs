@@ -3,3 +3,4 @@
 kolide_url: "https://kolide.yourwebsite.com"
 kolide_user: "admin"
 kolide_pw: "password"
+s3_bucket: "my-bucket-name"
