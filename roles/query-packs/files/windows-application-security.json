@@ -2,37 +2,37 @@
   "platform": "windows",
   "queries": {
     "Bitlocker_AutoEncrypt_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE key LIKE HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Bitlocker\\%%;",
+      "query": "SELECT * FROM registry WHERE key LIKE \u0027HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Bitlocker\\%%\u0027;",
       "interval": 3600,
       "description": "Controls Bitlocker full-disk encryption settings."
     },
     "Bitlocker_FDE_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE key LIKE HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\%%;",
+      "query": "SELECT * FROM registry WHERE key LIKE \u0027HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\FVE\\%%\u0027;",
       "interval": 3600,
       "description": "Controls Bitlocker full-disk encryption settings."
     },
     "Chrome_Extension_ForceList_Registry": {
-      "query": "SELECT * FROM registry WHERE key=HKEY_LOCAL_MACHINE\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist;",
+      "query": "SELECT * FROM registry WHERE key=\u0027HKEY_LOCAL_MACHINE\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\u0027;",
       "interval": 3600,
       "description": "Controls Google Chrome plugins that are forcibly installed."
     },
     "EMET_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE key LIKE HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\EMET\\%%;",
+      "query": "SELECT * FROM registry WHERE key LIKE \u0027HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\EMET\\%%\u0027;",
       "interval": 3600,
       "description": "Controls EMET-protected applications and system settings."
     },
     "Microsoft_LAPS_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE key=HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd;",
+      "query": "SELECT * FROM registry WHERE key=\u0027HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft Services\\AdmPwd\u0027;",
       "interval": 3600,
       "description": "Controls Local Administrative Password Solution (LAPS) settings."
     },
     "Passport_For_Work_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE path LIKE HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\PassportForWork\\%%;",
+      "query": "SELECT * FROM registry WHERE path LIKE \u0027HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\PassportForWork\\%%\u0027;",
       "interval": 3600,
       "description": "Controls Windows Passport for Work (Hello) settings."
     },
     "UAC_Settings_Registry": {
-      "query": "SELECT * FROM registry WHERE path=HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA;",
+      "query": "SELECT * FROM registry WHERE path=\u0027HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA\u0027;",
       "interval": 3600,
       "description": "Controls UAC. A setting of 0 indicates that UAC is disabled."
     }

@@ -2,231 +2,231 @@
   "platform": "darwin",
   "queries": {
     "WireLurker": {
-      "query" : "select * from launchd where name = com.apple.machook_damon.plist OR name = com.apple.globalupdate.plist OR name = com.apple.appstore.plughelper.plist OR name = com.apple.MailServiceAgentHelper.plist OR name = com.apple.systemkeychain-helper.plist OR name = com.apple.periodic-dd-mm-yy.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.machook_damon.plist\u0027 OR name = \u0027com.apple.globalupdate.plist\u0027 OR name = \u0027com.apple.appstore.plughelper.plist\u0027 OR name = \u0027com.apple.MailServiceAgentHelper.plist\u0027 OR name = \u0027com.apple.systemkeychain-helper.plist\u0027 OR name = \u0027com.apple.periodic-dd-mm-yy.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://github.com/PaloAltoNetworks-BD/WireLurkerDetector)",
       "value" : "Artifact used by this malware"
     },
     "Leverage-A_1": {
-      "query" : "select * from launchd where path like %UserEvent.System.plist;",
+      "query" : "select * from launchd where path like \u0027%UserEvent.System.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.intego.com/mac-security-blog/new-mac-trojan-discovered-related-to-syria/)",
       "value" : "Artifact used by this malware"
     },
     "Leverage-A_2": {
-      "query" : "select * from file where path = /Users/Shared/UserEvent.app;",
+      "query" : "select * from file where path = \u0027/Users/Shared/UserEvent.app\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.intego.com/mac-security-blog/new-mac-trojan-discovered-related-to-syria/)",
       "value" : "Artifact used by this malware"
     },
     "Leverage-A_3": {
-      "query" : "select * from launchd where name = com.GetFlashPlayer.plist;",
+      "query" : "select * from launchd where name = \u0027com.GetFlashPlayer.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.volexity.com/blog/2017/07/24/real-news-fake-flash-mac-os-x-users-targeted/)",
       "value" : "Artifact used by this malware"
     },
     "Tibet.D": {
-      "query" : "select * from launchd where path like %com.apple.AudioService.plist;",
+      "query" : "select * from launchd where path like \u0027%com.apple.AudioService.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.intego.com/mac-security-blog/os-x-malware-tibet-variant-found/)",
       "value" : "Artifact used by this malware"
     },
     "DevilRobber": {
-      "query" : "select * from launchd where name = com.apple.legion.plist or name = com.apple.pixel.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.legion.plist\u0027 or name = \u0027com.apple.pixel.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_devilrobber_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "XSLCmd": {
-      "query" : "select * from launchd where name = com.apple.service.clipboardd.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.service.clipboardd.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.fireeye.com/blog/threat-research/2014/09/forced-to-adapt-xslcmd-backdoor-now-on-os-x.html)",
       "value" : "Artifact used by this malware"
     },
     "Olyx": {
-      "query" : "select * from launchd where name = com.apple.DockActions.plist or name like %www. google.com.tstart.plist%;",
+      "query" : "select * from launchd where name = \u0027com.apple.DockActions.plist\u0027 or name like \u0027%www. google.com.tstart.plist%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_olyx_c.shtml)",
       "value" : "Artifact used by this malware"
     },
     "Imuler": {
-      "query" : "select * from launchd where name = checkflr.plist;",
+      "query" : "select * from launchd where name = \u0027checkflr.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_imuler_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "iWorkServ": {
-      "query" : "select * from startup_items where path like %iWorkServices%;",
+      "query" : "select * from startup_items where path like \u0027%iWorkServices%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_iworkserv_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "Morcut": {
-      "query" : "select * from launchd where name = com.apple.mdworker.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.mdworker.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/osx_morcut.a)",
       "value" : "Artifact used by this malware"
     },
     "BlazingKeylogger": {
-      "query" : "select * from launchd where name = com.BT.BPK.plist;",
+      "query" : "select * from launchd where name = \u0027com.BT.BPK.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.blazingtools.com/mac_keylogger.html)",
       "value" : "Artifact used by this malware"
     },
     "Icefog": {
-      "query" : "select * from launchd where name = apple.launchd.plist or name = com.apple.launchport.plist;",
+      "query" : "select * from launchd where name = \u0027apple.launchd.plist\u0027 or name = \u0027com.apple.launchport.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://securelist.com/blog/research/57331/the-icefog-apt-a-tale-of-cloak-and-three-daggers/)",
       "value" : "Artifact used by this malware"
     },
     "Careto": {
-      "query" : "select * from launchd where path like %com.apple.launchport.plist;",
+      "query" : "select * from launchd where path like \u0027%com.apple.launchport.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://blog.kaspersky.com/the-mask-unveiling-the-worlds-most-sophisticated-apt-campaign/)",
       "value" : "Artifact used by this malware"
     },
     "Inqtana": {
-      "query" : "select * from launchd where name = com.pwned.plist or name = com.openbundle.plist or name = com.adobe.reader.plist;",
+      "query" : "select * from launchd where name = \u0027com.pwned.plist\u0027 or name = \u0027com.openbundle.plist\u0027 or name = \u0027com.adobe.reader.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/inqtana_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "MacKontrol": {
-      "query" : "select * from launchd where name = com.apple.FolderActionsxl.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.FolderActionsxl.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_mackontrol_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "PubSab": {
-      "query" : "select * from launchd where name = com.apple.PubSabAgent.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.PubSabAgent.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/v-descs/backdoor_osx_sabpab_a.shtml)",
       "value" : "Artifact used by this malware"
     },
     "Dockster": {
-      "query" : "select * from launchd where name = mac.Dockset.deman.plist;",
+      "query" : "select * from launchd where name = \u0027mac.Dockset.deman.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.trendmicro.com/vinfo/us/threat-encyclopedia/malware/osx_dockster.a)",
       "value" : "Artifact used by this malware"
     },
     "CallMe": {
-      "query" : "select * from launchd where name = realPlayerUpdate.plist;",
+      "query" : "select * from launchd where name = \u0027realPlayerUpdate.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.f-secure.com/weblog/archives/00002546.html)",
       "value" : "Artifact used by this malware"
     },
     "Whitesmoke": {
-      "query" : "select * from launchd where name = com.whitesmoke.uploader.plist;",
+      "query" : "select * from launchd where name = \u0027com.whitesmoke.uploader.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/osxfkcodec-a-in-action/ )",
       "value" : "Artifact used by this malware"
     },
     "Codecm": {
-      "query" : "select * from launchd where name = com.codecm.uploader.plist;",
+      "query" : "select * from launchd where name = \u0027com.codecm.uploader.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/osxfkcodec-a-in-action/)",
       "value" : "Artifact used by this malware"
     },
     "iWorm": {
-      "query" : "select * from launchd where name = com.JavaW.plist;",
+      "query" : "select * from launchd where name = \u0027com.JavaW.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.virusbtn.com/virusbulletin/archive/2014/10/vb201410-iWorm)",
       "value" : "Artifact used by this malware"
     },
     "iWorm_1": {
-      "query" : "select * from file where path like /Library/Application Support/JavaW%;",
+      "query" : "select * from file where path like \u0027/Library/Application Support/JavaW%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(https://www.virusbtn.com/virusbulletin/archive/2014/10/vb201410-iWorm)",
       "value" : "Artifact used by this malware"
     },
     "SniperSpy": {
-      "query" : "select * from launchd where name = com.rxs.syslogagent.plist;",
+      "query" : "select * from launchd where name = \u0027com.rxs.syslogagent.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.symantec.com/security_response/writeup.jsp?docid=2010-081606-4034-99&tabid=2)",
       "value" : "Artifact used by this malware"
     },
     "Vsearch": {
-      "query" : "select * from launchd where name = com.vsearch.agent.plist OR name = com.vsearch.daemon.plist OR name = com.vsearch.helper.plist OR name = Jack.plist OR program_arguments = /etc/run_upd.sh OR program_arguments LIKE /Library/Application Support/%/Agent/agent.app/Contents/MacOS/agent%;",
+      "query" : "select * from launchd where name = \u0027com.vsearch.agent.plist\u0027 OR name = \u0027com.vsearch.daemon.plist\u0027 OR name = \u0027com.vsearch.helper.plist\u0027 OR name = \u0027Jack.plist\u0027 OR program_arguments = \u0027/etc/run_upd.sh\u0027 OR program_arguments LIKE \u0027/Library/Application Support/%/Agent/agent.app/Contents/MacOS/agent%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/arg-downlite/)",
       "value" : "Artifact used by this malware"
     },
     "Buca": {
-      "query" : "select * from launchd where name = com.webhelper.plist or name = com.webtools.update.agent.plist or name = com.webtools.uninstaller.plist;",
+      "query" : "select * from launchd where name = \u0027com.webhelper.plist\u0027 or name = \u0027com.webtools.update.agent.plist\u0027 or name = \u0027com.webtools.uninstaller.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/arg-buca-apps/)",
       "value" : "Artifact used by this malware"
     },
     "Conduit": {
-      "query" : "select * from launchd where path like %com.conduit.loader.agent.plist or name = com.conduit.loader.agent.plist or path like %com.perion.searchprotectd.plist or name = com.perion.searchprotectd.plist;",
+      "query" : "select * from launchd where path like \u0027%com.conduit.loader.agent.plist\u0027 or name = \u0027com.conduit.loader.agent.plist\u0027 or path like \u0027%com.perion.searchprotectd.plist\u0027 or name = \u0027com.perion.searchprotectd.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/arg-conduit/)",
       "value" : "Artifact used by this malware"
     },
     "Genieo": {
-      "query" : "select * from launchd where name = com.genieo.completer.download.plist OR name = com.genieo.completer.update.plist OR name = com.genieo.completer.ltvbit.plist OR name = com.installer.completer.download.plist OR name = com.installer.completer.update.plist OR name = com.installer.completer.ltvbit.plist OR name = com.genieoinnovation.macextension.plist OR name = com.genieoinnovation.macextension.client.plist OR name = com.genieo.engine.plist;",
+      "query" : "select * from launchd where name = \u0027com.genieo.completer.download.plist\u0027 OR name = \u0027com.genieo.completer.update.plist\u0027 OR name = \u0027com.genieo.completer.ltvbit.plist\u0027 OR name = \u0027com.installer.completer.download.plist\u0027 OR name = \u0027com.installer.completer.update.plist\u0027 OR name = \u0027com.installer.completer.ltvbit.plist\u0027 OR name = \u0027com.genieoinnovation.macextension.plist\u0027 OR name = \u0027com.genieoinnovation.macextension.client.plist\u0027 OR name = \u0027com.genieo.engine.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "(http://www.thesafemac.com/arg-genieo/)",
       "value" : "Artifact used by this malware"
     },
     "GenieoPart2": {
-      "query" : "select * from launchd where program_arguments like /Users/%/Library/Application Support/%/%.app/Contents/MacOS/App% -trigger download -isDev % -installVersion % -firstAppId % -identity %;",
+      "query" : "select * from launchd where program_arguments like \u0027/Users/%/Library/Application Support/%/%.app/Contents/MacOS/App% -trigger download -isDev % -installVersion % -firstAppId % -identity %\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "New version of Genieo",
       "value" : "Artifact used by this malware"
     },
     "HackingTeam_Mac_RAT1": {
-      "query" : "select * from file where path = /dev/ptmx0;",
+      "query" : "select * from file where path = \u0027/dev/ptmx0\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "Detect RAT used by Hacking Team",
       "value" : "Artifact used by this malware"
     },
     "HackingTeam_Mac_RAT2": {
-      "query" : "select * from apps where bundle_identifier = com.ht.RCSMac;",
+      "query" : "select * from apps where bundle_identifier = \u0027com.ht.RCSMac\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "Detect RAT used by Hacking Team",
       "value" : "Artifact used by this malware"
     },
     "HackingTeam_Mac_RAT3": {
-      "query" : "select * from launchd where label = com.ht.RCSMac OR name = com.apple.loginStoreagent.plist OR name = com.apple.mdworker.plist OR name = com.apple.UIServerLogin.plist;",
+      "query" : "select * from launchd where label = \u0027com.ht.RCSMac\u0027 OR name = \u0027com.apple.loginStoreagent.plist\u0027 OR name = \u0027com.apple.mdworker.plist\u0027 OR name = \u0027com.apple.UIServerLogin.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "Detect RAT used by Hacking Team",
       "value" : "Artifact used by this malware"
     },
     "HackingTeam_Mac_Persistence": {
-      "query": "select * from file where directory like /Users/%/Library/Preferences/8pHbqThW%;",
+      "query": "select * from file where directory like \u0027/Users/%/Library/Preferences/8pHbqThW%\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "Detection persistency by Hacking Team",
@@ -237,235 +237,235 @@
       "interval": 1200,
       "removed": false,
       "version": "1.4.5",
-      "description": "Report on Apple/OS X XProtect report generation. Reports are generated when OS X matches an item in xprotect_entries.",
+      "description": "Report on Apple/OS X XProtect \u0027report\u0027 generation. Reports are generated when OS X matches an item in xprotect_entries.",
       "value": "Although XProtect reports are rare, they may be worth collecting and aggregating internally."
     },
     "Keranger_1": {
-      "query": "select * from processes where name = kernel_service;",
+      "query": "select * from processes where name = \u0027kernel_service\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "http://researchcenter.paloaltonetworks.com/2016/03/new-os-x-ransomware-keranger-infected-transmission-bittorrent-client-installer/",
       "value": "Artifact used by this malware"
     },
     "Keranger_2": {
-      "query": "select * from file where path LIKE /Users/%/Library/.kernel_% OR path LIKE /Users/%/Library/kernel_service;",
+      "query": "select * from file where path LIKE \u0027/Users/%/Library/.kernel_%\u0027 OR path LIKE \u0027/Users/%/Library/kernel_service\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "http://researchcenter.paloaltonetworks.com/2016/03/new-os-x-ransomware-keranger-infected-transmission-bittorrent-client-installer/",
       "value": "Artifact used by this malware"
     },
     "PremierOpinion": {
-      "query": "select * from launchd where name = PremierOpinion.plist or name = PremierOpinionAgent.plist;",
+      "query": "select * from launchd where name = \u0027PremierOpinion.plist\u0027 or name = \u0027PremierOpinionAgent.plist\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://www.thesafemac.com/arg-premier-opinion/)",
       "value": "Artifact used by this malware"
     },
     "Bundlore": {
-      "query": "select * from launchd where name like com.WebShoppy.%.plist or name like com.SoftwareUpdater.%.plist or name like cinema-plus%.plist or name like com.WebTools.%.plist or name like com.crossrider.%.plist or name like shopy-mate_%.plist or name like com.WebShopper.%.plist;",
+      "query": "select * from launchd where name like \u0027com.WebShoppy.%.plist\u0027 or name like \u0027com.SoftwareUpdater.%.plist\u0027 or name like \u0027cinema-plus%.plist\u0027 or name like \u0027com.WebTools.%.plist\u0027 or name like \u0027com.crossrider.%.plist\u0027 or name like \u0027shopy-mate_%.plist\u0027 or name like \u0027com.WebShopper.%.plist\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://www.thesafemac.com/arg-bundlore/)",
       "value": "Artifact used by this malware"
     },
     "Spigot": {
-      "query": "select * from launchd where name like com.spigot.%.plist;",
+      "query": "select * from launchd where name like \u0027com.spigot.%.plist\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://www.thesafemac.com/arg-spigot/)",
       "value": "Artifact used by this malware"
     },
     "SearchInstUpdater": {
-      "query": "select * from launchd where name like com.updater.mc%.plist or name like com.updater.watch.mc%.plist;",
+      "query": "select * from launchd where name like \u0027com.updater.mc%.plist\u0027 or name like \u0027com.updater.watch.mc%.plist\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://www.virustotal.com/en/file/9530d481f7bb07aac98a46357bfcff96e2936a90571b4629ae865a2ce63e5c8e/analysis/1458973247/)",
       "value": "Artifact used by this malware"
     },
     "OSX_Pirrit": {
-      "query": "select * from plist where path = /Library/Preferences/com.common.plist and key = net_pref;",
+      "query": "select * from plist where path = \u0027/Library/Preferences/com.common.plist\u0027 and key = \u0027net_pref\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://threatpost.com/mac-adware-osx-pirrit-unleashes-ad-overload-for-now/117273/)",
       "value": "Artifact used by this malware"
     },
     "Backdoor_MAC_Eleanor": {
-      "query": "SELECT * FROM launchd WHERE name IN (com.getdropbox.dropbox.integritycheck.plist,com.getdropbox.dropbox.timegrabber.plist,com.getdropbox.dropbox.usercontent.plist);",
+      "query": "SELECT * FROM launchd WHERE name IN (\u0027com.getdropbox.dropbox.integritycheck.plist\u0027,\u0027com.getdropbox.dropbox.timegrabber.plist\u0027,\u0027com.getdropbox.dropbox.usercontent.plist\u0027);",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://blog.malwarebytes.com/cybercrime/2016/07/new-mac-backdoor-malware-eleanor/)",
       "value": "Artifact used by this malware"
     },
     "EliteKeylogger": {
-      "query": "select * from launchd where name = com.apple.fonts.plist and label = unknown;",
+      "query": "select * from launchd where name = \u0027com.apple.fonts.plist\u0027 and label = \u0027unknown\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://www.elitekeyloggers.com/elite-keylogger-mac)",
       "value": "Artifact used by this malware"
     },
     "Aobo_Keylogger": {
-      "query": "select * from launchd where name like com.ab.kl%.plist;",
+      "query": "select * from launchd where name like \u0027com.ab.kl%.plist\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://aobo.cc/aobo-mac-os-x-keylogger.html)",
       "value": "Artifact used by this malware"
     },
     "OSX_Keydnap": {
-      "query": "select * from launchd where name IN (com.apple.iCloud.sync.daemon, com.geticloud.icloud.photo);",
+      "query": "select * from launchd where name IN (\u0027com.apple.iCloud.sync.daemon\u0027, \u0027com.geticloud.icloud.photo\u0027);",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://www.welivesecurity.com/2016/07/06/new-osxkeydnap-malware-hungry-credentials)",
       "value": "Artifact used by this malware"
     },
     "Java_Adwind_Trojan": {
-      "query": "select * from launchd where name like org.%.plist and program_arguments like /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Dapple.awt.UIElement=true -jar /Users/%/.%;",
+      "query": "select * from launchd where name like \u0027org.%.plist\u0027 and program_arguments like \u0027/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java -Dapple.awt.UIElement=true -jar /Users/%/.%\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://blog.malwarebytes.com/threat-analysis/2016/07/cross-platform-malware-adwind-infects-mac/)",
       "value": "Artifact used by this malware"
     },
     "OSX_Backdoor_Mokes": {
-      "query": "select * from file where path LIKE /Users/%/Library/App Store/storeuserd OR path LIKE /Users/%/Library/com.apple.spotlight/SpotlightHelper OR path LIKE /Users/%/Library/Dock/com.apple.dock.cache OR path LIKE /Users/%/Library/Dropbox/DropboxCache OR path LIKE /Users/%/Library/Skype/SkypeHelper OR path LIKE /Users/%/Library/Google/Chrome/nacld OR path LIKE /Users/%/Library/Firefox/Profiles/profiled;",
+      "query": "select * from file where path LIKE \u0027/Users/%/Library/App Store/storeuserd\u0027 OR path LIKE \u0027/Users/%/Library/com.apple.spotlight/SpotlightHelper\u0027 OR path LIKE \u0027/Users/%/Library/Dock/com.apple.dock.cache\u0027 OR path LIKE \u0027/Users/%/Library/Dropbox/DropboxCache\u0027 OR path LIKE \u0027/Users/%/Library/Skype/SkypeHelper\u0027 OR path LIKE \u0027/Users/%/Library/Google/Chrome/nacld\u0027 OR path LIKE \u0027/Users/%/Library/Firefox/Profiles/profiled\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(https://securelist.com/blog/research/75990/the-missing-piece-sophisticated-os-x-backdoor-discovered/)",
       "value": "Artifact used by this malware"
     },
     "OSX_Komplex": {
-      "query": "select * from file where path = /Users/Shared/.local/kext or path = /Users/Shared/com.apple.updates.plist or path = /Users/Shared/start.sh;",
+      "query": "select * from file where path = \u0027/Users/Shared/.local/kext\u0027 or path = \u0027/Users/Shared/com.apple.updates.plist\u0027 or path = \u0027/Users/Shared/start.sh\u0027;",
       "interval": "3600",
       "version": "1.4.5",
       "description": "(http://researchcenter.paloaltonetworks.com/2016/09/unit42-sofacys-komplex-os-x-trojan/)",
       "value": "Artifact used by this malware"
     },
     "OceanLotus_launchagent": {
-      "query" : "select * from launchd where name = com.google.plugins.plist;",
+      "query" : "select * from launchd where name = \u0027com.google.plugins.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OceanLotus Launch Agent (https://www.alienvault.com/blogs/labs-research/oceanlotus-for-os-x-an-application-bundle-pretending-to-be-an-adobe-flash-update)",
       "value" : "Artifact used by this malware"
     },
     "OceanLotus_dropped_file_1": {
-      "query" : "select * from file, ( select /Library/Logs/.Logs/corevideosd ioc union select /Library/.SystemPreferences/.prev/.ver.txt ioc union select /Library/Parallels/.cfg ioc union select /Library/Preferences/.fDTYuRs ioc union select /Library/Hash/.Hashtag/.hash ioc union select /Library/Hash/.hash ioc ) iocs where file.path LIKE /Users/%/ || ioc OR file.path = iocs.ioc OR file.path LIKE /tmp/crunzip.temp.%;",
+      "query" : "select * from file, ( select \u0027/Library/Logs/.Logs/corevideosd\u0027 ioc union select \u0027/Library/.SystemPreferences/.prev/.ver.txt\u0027 ioc union select \u0027/Library/Parallels/.cfg\u0027 ioc union select \u0027/Library/Preferences/.fDTYuRs\u0027 ioc union select \u0027/Library/Hash/.Hashtag/.hash\u0027 ioc union select \u0027/Library/Hash/.hash\u0027 ioc ) iocs where file.path LIKE \u0027/Users/%/\u0027 || ioc OR file.path = iocs.ioc OR file.path LIKE \u0027/tmp/crunzip.temp.%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OceanLotus dropped file (https://www.alienvault.com/blogs/labs-research/oceanlotus-for-os-x-an-application-bundle-pretending-to-be-an-adobe-flash-update)",
       "value" : "Artifact used by this malware"
     },
     "XcodeGhost": {
-      "query" : "select * from ( select apps.bundle_short_version as xcode_version, apps.path as xcode_path, file.path, file.type as file_type from apps, file where apps.bundle_name=Xcode and file.path like (apps.path || /Contents/Developer/Platforms/%/Developer/SDKs/Library/%%)) join hash using (path) where file_type = regular;",
+      "query" : "select * from ( select apps.bundle_short_version as xcode_version, apps.path as xcode_path, file.path, file.type as file_type from apps, file where apps.bundle_name=\u0027Xcode\u0027 and file.path like (apps.path || \u0027/Contents/Developer/Platforms/%/Developer/SDKs/Library/%%\u0027)) join hash using (path) where file_type = \u0027regular\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "Xcode Ghost dropped files (http://researchcenter.paloaltonetworks.com/2015/09/novel-malware-xcodeghost-modifies-xcode-infects-apple-ios-apps-and-hits-app-store/)",
       "value" : "Artifact used by this malware"
     },
     "Quimitchin_Backdoor": {
-      "query" : "select * from launchd where name = com.client.client.plist;",
+      "query" : "select * from launchd where name = \u0027com.client.client.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "Quimitchin Launch Agent (https://blog.malwarebytes.com/threat-analysis/2017/01/new-mac-backdoor-using-antiquated-code/)",
       "value" : "Artifact used by this malware"
     },
     "Pronto": {
-      "query" : "select * from launchd where name = pronto.notification.plist or name = pronto.update.plist;",
+      "query" : "select * from launchd where name = \u0027pronto.notification.plist\u0027 or name = \u0027pronto.update.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "ProntoApp Launch Agents (https://malwarefixes.com/remove-pronto-video-converter/)",
       "value" : "Artifact used by this malware"
     },
     "OSX_DOK_1": {
-      "query" : "select * from launchd where name = com.apple.Safari.proxy.plist or name = com.apple.Safari.proxy.pac;",
+      "query" : "select * from launchd where name = \u0027com.apple.Safari.proxy.plist\u0027 or name = \u0027com.apple.Safari.proxy.pac\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "DOK Launch Agents (http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traffic/)",
       "value" : "Artifact used by this malware"
     },
     "OSX_DOK_2": {
-      "query" : "select common_name, sha1, subject_key_id from certificates where subject_key_id = e637d656f9f088ddca3b3b55c4fe698d8c97a552;",
+      "query" : "select common_name, sha1, subject_key_id from certificates where subject_key_id = \u0027e637d656f9f088ddca3b3b55c4fe698d8c97a552\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "DOK certificate (http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traffic/)",
       "value" : "Artifact used by this malware"
     },
     "OSX_DOK_3": {
-      "query" : "select * from file where path = /Users/Shared/AppStore.app;",
+      "query" : "select * from file where path = \u0027/Users/Shared/AppStore.app\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "DOK dropped file (http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traffic/)",
       "value" : "Artifact used by this malware"
     },
     "OSX_DOK_4": {
-      "query" : "select * from apps where bundle_name = Truesteer.AppStore;",
+      "query" : "select * from apps where bundle_name = \u0027Truesteer.AppStore\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "DOK malicious app (http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traffic/)",
       "value" : "Artifact used by this malware"
     },
     "OSX_Snake": {
-      "query" : "select * from file where path = /Library/LaunchDaemons/com.adobe.update.plist OR path = /Library/Scripts/installd.sh OR path = /Library/Scripts/queue OR path = /tmp/.gdm-socket OR path = /tmp/.gdm-selinux OR path LIKE /var/tmp/.ur-%%;",
+      "query" : "select * from file where path = \u0027/Library/LaunchDaemons/com.adobe.update.plist\u0027 OR path = \u0027/Library/Scripts/installd.sh\u0027 OR path = \u0027/Library/Scripts/queue\u0027 OR path = \u0027/tmp/.gdm-socket\u0027 OR path = \u0027/tmp/.gdm-selinux\u0027 OR path LIKE \u0027/var/tmp/.ur-%%\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OS X port of Snake malware discovered by Fox-IT (https://blog.fox-it.com/2017/05/03/snake-coming-soon-in-mac-os-x-flavour/)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_Proton_Files": {
-      "query" : "select * from file where path like /Users/%/Library/RenderFiles/activity_agent.app/ OR path like /Users/%/Library/LaunchAgents/fr.handbrake.activity_agent.plist OR path=/tmp/Updater.app OR path=/Library/.rand/updateragent.app;",
+      "query" : "select * from file where path like \u0027/Users/%/Library/RenderFiles/activity_agent.app/\u0027 OR path like \u0027/Users/%/Library/LaunchAgents/fr.handbrake.activity_agent.plist\u0027 OR path=\u0027/tmp/Updater.app\u0027 OR path=\u0027/Library/.rand/updateragent.app\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OSX/Proton bundled with a tampered version of Handbrake and Elmedia Player: (https://objective-see.com/blog/blog_0x1D.html and https://www.welivesecurity.com/2017/10/20/osx-proton-supply-chain-attack-elmedia/)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_Proton_Launchd": {
-      "query" : "select * from launchd where name=com.Eltima.UpdaterAgent.plist;",
+      "query" : "select * from launchd where name=\u0027com.Eltima.UpdaterAgent.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OSX/Proton bundled with a tampered version of Elmedia Player: (https://www.welivesecurity.com/2017/10/20/osx-proton-supply-chain-attack-elmedia/)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_Proton_Process": {
-      "query" : "select * from processes where path like /Users/%/Library/RenderFiles/activity_agent.app/Contents/MacOS/activity_agent OR path=/Library/.rand/updateragent.app/Contents/MacOS/updateragent;",
+      "query" : "select * from processes where path like \u0027/Users/%/Library/RenderFiles/activity_agent.app/Contents/MacOS/activity_agent\u0027 OR path=\u0027/Library/.rand/updateragent.app/Contents/MacOS/updateragent\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "OSX/Proton bundled with a tampered version of Handbrake and Elmedia Player: (https://objective-see.com/blog/blog_0x1D.html and https://www.welivesecurity.com/2017/10/20/osx-proton-supply-chain-attack-elmedia/)",
       "value" : "Artifacts created by this malware"
     },
     "EmPyre_Agent": {
-      "query" : "select * from launchd where name = com.proxy.initialize.plist;",
+      "query" : "select * from launchd where name = \u0027com.proxy.initialize.plist\u0027;",
       "interval" : "3600",
       "version": "1.4.5",
       "description" : "EmPyre post exploitation agent (https://github.com/EmpireProject/EmPyre/blob/master/lib/modules/persistence/osx/launchdaemonexecutable.py)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_FruitFly": {
-      "query" : "select * from launchd where name = com.client.client.plist;",
+      "query" : "select * from launchd where name = \u0027com.client.client.plist\u0027;",
       "interval" : "3600",
       "version" : "1.4.5",
       "description" : "FruitFly OSX Malware (https://blog.malwarebytes.com/threat-analysis/2017/01/new-mac-backdoor-using-antiquated-code/)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_Mughthesec": {
-      "query" : "select * from launchd where name = com.Mughthesec.plist;",
+      "query" : "select * from launchd where name = \u0027com.Mughthesec.plist\u0027;",
       "interval" : "3600",
       "version" : "1.4.5",
       "description" : "Mughthesec OSX Malware (https://objective-see.com/blog/blog_0x20.html)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_HiddenLotus": {
-      "query" : "select * from launchd where name = com.apple.hidd.shared.plist;",
+      "query" : "select * from launchd where name = \u0027com.apple.hidd.shared.plist\u0027;",
       "interval" : "3600",
       "version" : "1.4.5",
       "description" : "Apple added XProtect rules for this sample: (https://www.virustotal.com/en/file/f261815905e77eebdb5c4ec06a7acdda7b68644b1f5155049f133be866d8b179/analysis/1509567775/)",
       "value" : "Artifacts created by this malware"
     },
     "OSX_MaMi_DNS_Servers": {
-      "query" : "select * from dns_resolvers where type = nameserver and address in (82.163.143.135, 82.163.142.137);",
+      "query" : "select * from dns_resolvers where type = \u0027nameserver\u0027 and address in (\u002782.163.143.135\u0027, \u002782.163.142.137\u0027);",
       "interval" : "3600",
       "version" : "2.8.0",
       "description" : "MaMi OSX Malware 2017-01-12 (https://objective-see.com/blog/blog_0x26.html)",
       "value" : "DNS Servers set by this malware"
     },
     "OSX_MaMi_Certificate": {
-      "query" : "select * from certificates where common_name like %cloudguard.me% and not_valid_after = 2352216315;",
+      "query" : "select * from certificates where common_name like \u0027%cloudguard.me%\u0027 and not_valid_after = \u00272352216315\u0027;",
       "interval" : "3600",
       "version" : "2.8.0",
       "description" : "MaMi OSX Malware 2017-01-12 (https://objective-see.com/blog/blog_0x26.html)",
