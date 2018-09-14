@@ -6,11 +6,23 @@ Ansible role for importing query packs into Kolide (https://kolide.com)
 Requirements
 ------------
 
-If you want to download the query packs from an S3 bucket, you will need to pip install boto, and you will need the AWS CLI installed with your AWS credentials configured.
+Must have Ansible installed.
+
+If you want to download the query packs from an S3 bucket, you will need to pip install boto, and you will need the AWS CLI installed with your AWS credentials configured (`pip install awscli` or `brew install awscli`, or similar).
 
 Otherwise, you should only need to pip install requests.
 
 Query packs are from: https://github.com/palantir/osquery-configuration/tree/master/Endpoints/packs
+
+How To
+--------------
+
+1. Clone the repo
+2.
+```
+cd query-packs
+ansible-playbook main.yml
+```
 
 Role Variables
 --------------
