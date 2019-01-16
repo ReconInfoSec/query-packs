@@ -12,7 +12,7 @@ If you want to download the query packs from an S3 bucket, you will need to pip 
 
 Otherwise, you should only need to pip install requests.
 
-Query packs are from: https://github.com/palantir/osquery-configuration/tree/master/Classic/Endpoints/packs
+Query packs are from: https://github.com/palantir/osquery-configuration/tree/master/Classic
 
 How To
 --------------
