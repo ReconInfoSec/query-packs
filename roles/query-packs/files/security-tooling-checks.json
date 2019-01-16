@@ -9,14 +9,14 @@
     "endpoint_security_tool_not_running": {
       "query": "SELECT IFNULL(process_count,0) as process_exists FROM (SELECT count(*) as process_count from processes where path=\u0027/Applications/EndpointSecurityTool\u0027 OR lower(path)=\u0027c:\\endpointsecuritytool.exe\u0027) where process_exists!=1;",
       "interval": 28800,
-      "description": "Returns an event if a EndpointSecurityTool process is not found running from /Applications/EndpointSecurityTool\u0027 (OSX) or \u0027c:\\endpointsecuritytool.exe\u0027 (Windows)",
+      "description": "Returns an event if a EndpointSecurityTool process is not found running",
       "platform": "windows,darwin",
       "snapshot": true
     },
     "backup_tool_not_running": {
       "query": "SELECT IFNULL(process_count,0) as process_exists FROM (SELECT count(*) as process_count from processes where path=\u0027/Applications/BackupTool\u0027 OR lower(path) LIKE \u0027c:\\backuptool.exe\u0027) where process_exists!=1;",
       "interval": 28800,
-      "description": "Returns an event if a BackupTool process is not found running from \u0027/Applications/BackupTool\u0027 (OSX) or \u0027c:\backuptool.exe\u0027 (Windows)",
+      "description": "Returns an event if a BackupTool process is not found running from \u0027/Applications/BackupTool\u0027 (OSX) or \u0027c:\\backuptool.exe\u0027 (Windows)",
       "platform": "windows,darwin",
       "snapshot": true
     }

@@ -38,17 +38,16 @@ if 'platform' in query_pack.keys():
 else:
     label_id = []
 
+query_id = None
 for key,value in query_pack['queries'].iteritems():
 
     # Check for existing query
     response = requests.get('{{ kolide_url }}/api/v1/kolide/queries', headers=headers, verify=True)
     response_json = response.json()
 
-    query_id = None
     for response in response_json['queries']:
         if key == response['name']:
             query_id = response['id']
-
     # If query already exists
     if query_id is not None:
 
