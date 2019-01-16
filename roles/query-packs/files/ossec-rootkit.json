@@ -1,0 +1,411 @@
+{
+  "platform": "linux",
+  "queries": {
+    "bash_door": {
+      "query": "select * from file where path in (\u0027/tmp/mcliZokhb\u0027, \u0027/tmp/mclzaKmfa\u0027);",
+      "interval": "3600",
+      "description": "bash_door",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "slapper_installed": {
+      "query": "select * from file where path in (\u0027/tmp/.bugtraq\u0027, \u0027/tmp/.bugtraq.c\u0027, \u0027/tmp/.cinik\u0027, \u0027/tmp/.b\u0027, \u0027/tmp/httpd\u0027, \u0027/tmp./update\u0027, \u0027/tmp/.unlock\u0027, \u0027/tmp/.font-unix/.cinik\u0027, \u0027/tmp/.cinik\u0027);",
+      "interval": "3600",
+      "description": "slapper_installed",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "mithra`s_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/lib/locale/uboot\u0027);",
+      "interval": "3600",
+      "description": "mithra`s_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "omega_worm": {
+      "query": "select * from file where path in (\u0027/dev/chr\u0027);",
+      "interval": "3600",
+      "description": "omega_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "kenga3_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/include/. .\u0027);",
+      "interval": "3600",
+      "description": "kenga3_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "sadmind/iis_worm": {
+      "query": "select * from file where path in (\u0027/dev/cuc\u0027);",
+      "interval": "3600",
+      "description": "sadmind/iis_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "rsha": {
+      "query": "select * from file where path in (\u0027/usr/bin/kr4p\u0027, \u0027/usr/bin/n3tstat\u0027, \u0027/usr/bin/chsh2\u0027, \u0027/usr/bin/slice2\u0027, \u0027/etc/rc.d/rsha\u0027);",
+      "interval": "3600",
+      "description": "rsha",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "old_rootkits": {
+      "query": "select * from file where path in (\u0027/usr/include/rpc/ ../kit\u0027, \u0027/usr/include/rpc/ ../kit2\u0027, \u0027/usr/doc/.sl\u0027, \u0027/usr/doc/.sp\u0027, \u0027/usr/doc/.statnet\u0027, \u0027/usr/doc/.logdsys\u0027, \u0027/usr/doc/.dpct\u0027, \u0027/usr/doc/.gifnocfi\u0027, \u0027/usr/doc/.dnif\u0027, \u0027/usr/doc/.nigol\u0027);",
+      "interval": "3600",
+      "description": "old_rootkits",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "telekit_trojan": {
+      "query": "select * from file where path in (\u0027/dev/hda06\u0027, \u0027/usr/info/libc1.so\u0027);",
+      "interval": "3600",
+      "description": "telekit_trojan",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "tc2_worm": {
+      "query": "select * from file where path in (\u0027/usr/info/.tc2k\u0027, \u0027/usr/bin/util\u0027, \u0027/usr/sbin/initcheck\u0027, \u0027/usr/sbin/ldb\u0027);",
+      "interval": "3600",
+      "description": "tc2_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "shitc": {
+      "query": "select * from file where path in (\u0027/bin/home\u0027, \u0027/sbin/home\u0027, \u0027/usr/sbin/in.slogind\u0027);",
+      "interval": "3600",
+      "description": "shitc",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "rh_sharpe": {
+      "query": "select * from file where path in (\u0027/bin/.ps\u0027, \u0027/usr/bin/cleaner\u0027, \u0027/usr/bin/slice\u0027, \u0027/usr/bin/vadim\u0027, \u0027/usr/bin/.ps\u0027, \u0027/bin/.lpstree\u0027, \u0027/usr/bin/.lpstree\u0027, \u0027/usr/bin/lnetstat\u0027, \u0027/bin/lnetstat\u0027, \u0027/usr/bin/ldu\u0027, \u0027/bin/ldu\u0027, \u0027/usr/bin/lkillall\u0027, \u0027/bin/lkillall\u0027, \u0027/usr/include/rpcsvc/du\u0027);",
+      "interval": "3600",
+      "description": "rh_sharpe",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "showtee_/_romanian_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/include/addr.h\u0027, \u0027/usr/include/file.h\u0027, \u0027/usr/include/syslogs.h\u0027, \u0027/usr/include/proc.h\u0027);",
+      "interval": "3600",
+      "description": "showtee_/_romanian_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "lrk_rootkit": {
+      "query": "select * from file where path in (\u0027/dev/ida/.inet\u0027);",
+      "interval": "3600",
+      "description": "lrk_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "zk_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/share/.zk\u0027, \u0027/usr/share/.zk/zk\u0027, \u0027/etc/1ssue.net\u0027, \u0027/usr/X11R6/.zk\u0027, \u0027/usr/X11R6/.zk/xfs\u0027, \u0027/usr/X11R6/.zk/echo\u0027, \u0027/etc/sysconfig/console/load.zk\u0027);",
+      "interval": "3600",
+      "description": "zk_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "ramen_worm": {
+      "query": "select * from file where path in (\u0027/usr/lib/ldlibps.so\u0027, \u0027/usr/lib/ldlibns.so\u0027, \u0027/usr/lib/ldliblogin.so\u0027, \u0027/usr/src/.poop\u0027, \u0027/tmp/ramen.tgz\u0027, \u0027/etc/xinetd.d/asp\u0027);",
+      "interval": "3600",
+      "description": "ramen_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "maniac_rk": {
+      "query": "select * from file where path in (\u0027/usr/bin/mailrc\u0027);",
+      "interval": "3600",
+      "description": "maniac_rk",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "bmbl_rootkit": {
+      "query": "select * from file where path in (\u0027/etc/.bmbl\u0027, \u0027/etc/.bmbl/sk\u0027);",
+      "interval": "3600",
+      "description": "bmbl_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "suckit_rootkit": {
+      "query": "select * from file where path in (\u0027/lib/.x\u0027, \u0027/lib/sk\u0027);",
+      "interval": "3600",
+      "description": "suckit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "adore_rootkit": {
+      "query": "select * from file where path in (\u0027/etc/bin/ava\u0027, \u0027/etc/sbin/ava\u0027);",
+      "interval": "3600",
+      "description": "adore_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "ldp_worm": {
+      "query": "select * from file where path in (\u0027/dev/.kork\u0027, \u0027/bin/.login\u0027, \u0027/bin/.ps\u0027);",
+      "interval": "3600",
+      "description": "ldp_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "romanian_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/sbin/initdl\u0027, \u0027/usr/sbin/xntps\u0027);",
+      "interval": "3600",
+      "description": "romanian_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "illogic_rootkit": {
+      "query": "select * from file where path in (\u0027/lib/security/.config\u0027, \u0027/usr/bin/sia\u0027, \u0027/etc/ld.so.hash\u0027);",
+      "interval": "3600",
+      "description": "illogic_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "bobkit_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/include/.../\u0027, \u0027/usr/lib/.../\u0027, \u0027/usr/sbin/.../\u0027, \u0027/usr/bin/ntpsx\u0027, \u0027/tmp/.bkp\u0027, \u0027/usr/lib/.bkit-\u0027);",
+      "interval": "3600",
+      "description": "bobkit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "monkit": {
+      "query": "select * from file where path in (\u0027/lib/defs\u0027);",
+      "interval": "3600",
+      "description": "monkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "override_rootkit": {
+      "query": "select * from file where path in (\u0027/dev/grid-hide-pid-\u0027, \u0027/dev/grid-unhide-pid-\u0027, \u0027/dev/grid-show-pids\u0027, \u0027/dev/grid-hide-port-\u0027, \u0027/dev/grid-unhide-port-\u0027);",
+      "interval": "3600",
+      "description": "override_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "madalin_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/include/icekey.h\u0027, \u0027/usr/include/iceconf.h\u0027, \u0027/usr/include/iceseed.h\u0027);",
+      "interval": "3600",
+      "description": "madalin_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "solaris_worm": {
+      "query": "select * from file where path in (\u0027/var/adm/.profile\u0027, \u0027/var/spool/lp/.profile\u0027, \u0027/var/adm/sa/.adm\u0027, \u0027/var/spool/lp/admins/.lp\u0027);",
+      "interval": "3600",
+      "description": "solaris_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "phalanx_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/share/.home*\u0027, \u0027/usr/share/.home*/tty\u0027, \u0027/etc/host.ph1\u0027, \u0027/bin/host.ph1\u0027);",
+      "interval": "3600",
+      "description": "phalanx_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "ark_rootkit": {
+      "query": "select * from file where path in (\u0027/dev/ptyxx\u0027);",
+      "interval": "3600",
+      "description": "ark_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "tribe_bot": {
+      "query": "select * from file where path in (\u0027/dev/wd4\u0027);",
+      "interval": "3600",
+      "description": "tribe_bot",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "cback_worm": {
+      "query": "select * from file where path in (\u0027/tmp/cback\u0027, \u0027/tmp/derfiq\u0027);",
+      "interval": "3600",
+      "description": "cback_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "optickit": {
+      "query": "select * from file where path in (\u0027/usr/bin/xchk\u0027, \u0027/usr/bin/xsf\u0027, \u0027/usr/bin/xsf\u0027, \u0027/usr/bin/xchk\u0027);",
+      "interval": "3600",
+      "description": "optickit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "anonoiyng_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/sbin/mech\u0027, \u0027/usr/sbin/kswapd\u0027);",
+      "interval": "3600",
+      "description": "anonoiyng_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "loc_rookit": {
+      "query": "select * from file where path in (\u0027/tmp/xp\u0027, \u0027/tmp/kidd0.c\u0027, \u0027/tmp/kidd0\u0027);",
+      "interval": "3600",
+      "description": "loc_rookit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "showtee": {
+      "query": "select * from file where path in (\u0027/usr/lib/.egcs\u0027, \u0027/usr/lib/.wormie\u0027, \u0027/usr/lib/.kinetic\u0027, \u0027/usr/lib/liblog.o\u0027, \u0027/usr/include/cron.h\u0027, \u0027/usr/include/chk.h\u0027);",
+      "interval": "3600",
+      "description": "showtee",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "zarwt_rootkit": {
+      "query": "select * from file where path in (\u0027/bin/imin\u0027, \u0027/bin/imout\u0027);",
+      "interval": "3600",
+      "description": "zarwt_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "lion_worm": {
+      "query": "select * from file where path in (\u0027/dev/.lib\u0027, \u0027/dev/.lib/1iOn.sh\u0027, \u0027/bin/mjy\u0027, \u0027/bin/in.telnetd\u0027, \u0027/usr/info/torn\u0027);",
+      "interval": "3600",
+      "description": "lion_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "suspicious_file": {
+      "query": "select * from file where path in (\u0027/etc/rc.d/init.d/rc.modules\u0027, \u0027/lib/ldd.so\u0027, \u0027/usr/man/muie\u0027, \u0027/usr/X11R6/include/pain\u0027, \u0027/usr/bin/sourcemask\u0027, \u0027/usr/bin/ras2xm\u0027, \u0027/usr/bin/ddc\u0027, \u0027/usr/bin/jdc\u0027, \u0027/usr/sbin/in.telnet\u0027, \u0027/sbin/vobiscum\u0027, \u0027/usr/sbin/jcd\u0027, \u0027/usr/sbin/atd2\u0027, \u0027/usr/bin/ishit\u0027, \u0027/usr/bin/.etc\u0027, \u0027/usr/bin/xstat\u0027, \u0027/var/run/.tmp\u0027, \u0027/usr/man/man1/lib/.lib\u0027, \u0027/usr/man/man2/.man8\u0027, \u0027/var/run/.pid\u0027, \u0027/lib/.so\u0027, \u0027/lib/.fx\u0027, \u0027/lib/lblip.tk\u0027, \u0027/usr/lib/.fx\u0027, \u0027/var/local/.lpd\u0027, \u0027/dev/rd/cdb\u0027, \u0027/dev/.rd/\u0027, \u0027/usr/lib/pt07\u0027, \u0027/usr/bin/atm\u0027, \u0027/tmp/.cheese\u0027, \u0027/dev/.arctic\u0027, \u0027/dev/.xman\u0027, \u0027/dev/.golf\u0027, \u0027/dev/srd0\u0027, \u0027/dev/ptyzx\u0027, \u0027/dev/ptyzg\u0027, \u0027/dev/xdf1\u0027, \u0027/dev/ttyop\u0027, \u0027/dev/ttyof\u0027, \u0027/dev/hd7\u0027, \u0027/dev/hdx1\u0027, \u0027/dev/hdx2\u0027, \u0027/dev/xdf2\u0027, \u0027/dev/ptyp\u0027, \u0027/dev/ptyr\u0027, \u0027/sbin/pback\u0027, \u0027/usr/man/man3/psid\u0027, \u0027/proc/kset\u0027, \u0027/usr/bin/gib\u0027, \u0027/usr/bin/snick\u0027, \u0027/usr/bin/kfl\u0027, \u0027/tmp/.dump\u0027, \u0027/var/.x\u0027, \u0027/var/.x/psotnic\u0027);",
+      "interval": "3600",
+      "description": "suspicious_file",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "apa_kit": {
+      "query": "select * from file where path in (\u0027/usr/share/.aPa\u0027);",
+      "interval": "3600",
+      "description": "apa_kit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "enye_sec_rootkit": {
+      "query": "select * from file where path in (\u0027/etc/.enyelkmHIDE^IT.ko\u0027);",
+      "interval": "3600",
+      "description": "enye_sec_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "rk17": {
+      "query": "select * from file where path in (\u0027/bin/rtty\u0027, \u0027/bin/squit\u0027, \u0027/sbin/pback\u0027, \u0027/proc/kset\u0027, \u0027/usr/src/linux/modules/autod.o\u0027, \u0027/usr/src/linux/modules/soundx.o\u0027);",
+      "interval": "3600",
+      "description": "rk17",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "trk_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/bin/soucemask\u0027, \u0027/usr/bin/sourcemask\u0027);",
+      "interval": "3600",
+      "description": "trk_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "scalper_installed": {
+      "query": "select * from file where path in (\u0027/tmp/.uua\u0027, \u0027/tmp/.a\u0027);",
+      "interval": "3600",
+      "description": "scalper_installed",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "hidr00tkit": {
+      "query": "select * from file where path in (\u0027/var/lib/games/.k\u0027);",
+      "interval": "3600",
+      "description": "hidr00tkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "beastkit_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/local/bin/bin\u0027, \u0027/usr/man/.man10\u0027, \u0027/usr/sbin/arobia\u0027, \u0027/usr/lib/elm/arobia\u0027, \u0027/usr/local/bin/.../bktd\u0027);",
+      "interval": "3600",
+      "description": "beastkit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "shv5_rootkit": {
+      "query": "select * from file where path in (\u0027/lib/libsh.so\u0027, \u0027/usr/lib/libsh\u0027);",
+      "interval": "3600",
+      "description": "shv5_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "esrk_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/lib/tcl5.3\u0027);",
+      "interval": "3600",
+      "description": "esrk_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "shkit_rootkit": {
+      "query": "select * from file where path in (\u0027/lib/security/.config\u0027, \u0027/etc/ld.so.hash\u0027);",
+      "interval": "3600",
+      "description": "shkit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "knark_installed": {
+      "query": "select * from file where path in (\u0027/proc/knark\u0027, \u0027/dev/.pizda\u0027, \u0027/dev/.pula\u0027, \u0027/dev/.pula\u0027);",
+      "interval": "3600",
+      "description": "knark_installed",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "volc_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/lib/volc\u0027, \u0027/usr/bin/volc\u0027);",
+      "interval": "3600",
+      "description": "volc_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "fu_rootkit": {
+      "query": "select * from file where path in (\u0027/sbin/xc\u0027, \u0027/usr/include/ivtype.h\u0027, \u0027/bin/.lib\u0027);",
+      "interval": "3600",
+      "description": "fu_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "ajakit_rootkit": {
+      "query": "select * from file where path in (\u0027/lib/.ligh.gh\u0027, \u0027/lib/.libgh.gh\u0027, \u0027/lib/.libgh-gh\u0027, \u0027/dev/tux\u0027, \u0027/dev/tux/.proc\u0027, \u0027/dev/tux/.file\u0027);",
+      "interval": "3600",
+      "description": "ajakit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "monkit_found": {
+      "query": "select * from file where path in (\u0027/usr/lib/libpikapp.a\u0027);",
+      "interval": "3600",
+      "description": "monkit_found",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "t0rn_rootkit": {
+      "query": "select * from file where path in (\u0027/usr/src/.puta\u0027, \u0027/usr/info/.t0rn\u0027, \u0027/lib/ldlib.tk\u0027, \u0027/etc/ttyhash\u0027, \u0027/sbin/xlogin\u0027);",
+      "interval": "3600",
+      "description": "t0rn_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "adore_worm": {
+      "query": "select * from file where path in (\u0027/dev/.shit/red.tgz\u0027, \u0027/usr/lib/libt\u0027, \u0027/usr/bin/adore\u0027);",
+      "interval": "3600",
+      "description": "adore_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "55808.a_worm": {
+      "query": "select * from file where path in (\u0027/tmp/.../a\u0027, \u0027/tmp/.../r\u0027);",
+      "interval": "3600",
+      "description": "55808.a_worm",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    },
+    "tuxkit_rootkit": {
+      "query": "select * from file where path in (\u0027/dev/tux\u0027, \u0027/usr/bin/xsf\u0027, \u0027/usr/bin/xchk\u0027);",
+      "interval": "3600",
+      "description": "tuxkit_rootkit",
+      "value": "Artifacts used by this malware",
+      "platform": "linux"
+    }
+  }
+}

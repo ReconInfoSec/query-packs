@@ -1,10 +1,10 @@
 ---
-- name: Get query pack from S3
-  aws_s3:
-    bucket: "{{ s3_bucket }}"
-    object: "{{ item }}.json"
-    dest: "roles/query-packs/files/{{ item }}.json"
-    mode: get
+# - name: Get query pack from S3
+#   aws_s3:
+#     bucket: "{{ s3_bucket }}"
+#     object: "{{ item }}.json"
+#     dest: "roles/query-packs/files/{{ item }}.json"
+#     mode: get
 
 - name: Login and get bearer token
   uri:
@@ -17,6 +17,7 @@
       DNT: 1
     validate_certs: no
     return_content: yes
+    follow_redirects: all
   register: response
 
 - name: Get token
